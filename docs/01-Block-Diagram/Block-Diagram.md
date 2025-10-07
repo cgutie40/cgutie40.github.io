@@ -32,4 +32,4 @@ The diagram is meant to make it clear how each component works together, how sen
 - Signals from other team members include analog and digital inputs/outputs. The block diagram shows which microcontroller pins each connection uses so everything integrates smoothly.
 
 
-![Block Diagram](Cristopher_G_Team_208_INDV.drawio (1).png)
+![Block Diagram](Images/Cristopher_G_Team_208_INDV.drawio (1).png)
