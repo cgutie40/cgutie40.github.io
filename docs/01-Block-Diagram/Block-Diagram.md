@@ -31,4 +31,4 @@ The diagram is meant to make it clear how each component works together, how sen
 ### Team Connections
 - Signals from other team members include analog and digital inputs/outputs. The block diagram shows which microcontroller pins each connection uses so everything integrates smoothly.
 
-![Block Diagram](Cristopher_G_Team_208_INDV.drawio%20(1).png)
+![Block Diagram](Cristopher_G_Team_208_INDV%20(1).png)
