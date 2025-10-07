@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#overview-of-block-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -502,20 +502,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#overview-of-block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Overview of Block Diagram
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview of Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Power
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actuators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actuators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#team-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -800,20 +851,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#overview-of-block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Overview of Block Diagram
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview of Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Power
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actuators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actuators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#team-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -842,19 +944,36 @@
 
   <h1>Individal Block Diagram</h1>
 
-<h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
-<h2 id="example-block-diagram">Example Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../individual-block-diagram.png" data-desc-position="bottom"><img alt="Example of Indivial Block diagram " src="../individual-block-diagram.png"></a></p>
+<h2 id="overview-of-block-diagram">Overview of Block Diagram</h2>
+<p>This block diagram shows how the water leak detection system is put together, including power, sensors, actuators, and team connections. It helps explain how everything communicates with the PIC18F57Q43 and how power flows through the system.</p>
+<h3 id="purpose">Purpose</h3>
+<p>The diagram is meant to make it clear how each component works together, how sensors and actuators connect, and how team member modules interface with the system. It’s a quick reference for building, testing, and understanding the project.</p>
+<h3 id="power">Power</h3>
+<ul>
+<li><strong>Battery:</strong> 9 V  </li>
+<li><strong>Voltage Regulation:</strong> 3.3 V Buck switching regulator (<code>MP2307DN-LF-Z</code>) to supply the PIC, sensors, OLED, and LED  </li>
+<li><strong>Battery Monitoring:</strong> <code>VOLT-01</code> module tracks battery life  </li>
+<li><strong>Indicators:</strong> Red LED lights up if there’s a problem  </li>
+</ul>
+<h3 id="sensors">Sensors</h3>
+<ul>
+<li><strong>Analog:</strong> Water pressure sensor from a team member on pin 6  </li>
+<li><strong>Digital:</strong> Moisture sensor from a team member on pin 1  </li>
+</ul>
+<h3 id="actuators">Actuators</h3>
+<ul>
+<li><strong>Speaker:</strong> From a team member on pin 2  </li>
+<li><strong>Red LED:</strong> Local indicator for system status  </li>
+</ul>
+<h3 id="display">Display</h3>
+<ul>
+<li><strong>OLED Screen:</strong> <code>IPBOLD-96</code>, connected via I²C, shows battery life and system status  </li>
+</ul>
+<h3 id="team-connections">Team Connections</h3>
+<ul>
+<li>Signals from other team members include analog and digital inputs/outputs. The block diagram shows which microcontroller pins each connection uses so everything integrates smoothly.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Cristopher_G_Team_208_INDV.drawio (1).png" data-desc-position="bottom"><img alt="Block Diagram" src="Cristopher_G_Team_208_INDV.drawio (1).png"></a></p>
 
 
 
