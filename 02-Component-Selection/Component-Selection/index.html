@@ -26,7 +26,7 @@
 
     
       
-        <title>Component Selection Example - EGR 304 (Cristopher Gutierrez) Data Sheet</title>
+        <title>Component Selection - EGR 304 (Cristopher Gutierrez) Data Sheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples" class="md-skip">
+        <a href="#humidity-temperature-sensors" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Selection Example
+              Component Selection
             
           </span>
         </div>
@@ -517,7 +517,7 @@
           
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection
   </span>
   
 
@@ -528,7 +528,7 @@
         
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection
   </span>
   
 
@@ -548,35 +548,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#humidity-temperature-sensors" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
+      Humidity / Temperature Sensors
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#voltage-regulator" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 2
+      Voltage Regulator
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#oled-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mosfet" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOSFET
+    </span>
+  </a>
   
 </li>
       
@@ -815,35 +818,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#humidity-temperature-sensors" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
+      Humidity / Temperature Sensors
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#voltage-regulator" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 2
+      Voltage Regulator
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#oled-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mosfet" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOSFET
+    </span>
+  </a>
   
 </li>
       
@@ -870,107 +876,159 @@
   
 
 
-  <h1>Component Selection Example</h1>
+  <h1>Component Selection</h1>
 
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
+<h2 id="humidity-temperature-sensors">Humidity / Temperature Sensors</h2>
 <table>
 <thead>
 <tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
+<th>Image</th>
+<th>Solution (with price)</th>
 <th>Pros</th>
 <th>Cons</th>
+<th>Link to Product</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
-</tr>
-<tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
 <td></td>
+<td><strong>SHT31-DIS-F2.5KS — $5.39/unit</strong></td>
+<td>- 2.15–5.5 V voltage range (perfect) <br> - Measures both humidity and temperature <br> - In stock and good delivery time <br> - High accuracy / good stability</td>
+<td>- More expensive <br> - Needy with maintenance</td>
+<td><a href="https://www.digikey.com/en/products/detail/sensirion-ag/SHT31-DIS-F2-5KS/6212134">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>BMP384 — $3.35/unit</strong></td>
+<td>- Low power consumption <br> - Compact package</td>
+<td>- Primarily designed for drones <br> - Some features not a primary focus for the product in development</td>
+<td><a href="https://www.digikey.com/en/products/detail/bosch-sensortec/BMP388/8322638">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>MPR121QR2 — $0.59/unit</strong></td>
+<td>- Multiple channels (supports up to 12 electrodes) <br> - Sleep/standby modes</td>
+<td>- Comes in bulk orders only <br> - Limited availability</td>
+<td><a href="https://www.digikey.com/en/products/detail/nxp-usa-inc/MPR121QR2/2186527">Link to product</a></td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
+<p><strong>Choice:</strong> Option 1 — SHT31-DIS-F2.5KS<br>
+<strong>Rationale:</strong> This sensor best matches the project requirements. Despite its higher cost, it offers high accuracy, excellent stability, and dual humidity/temperature readings that provide valuable user data.</p>
+<hr>
+<h2 id="voltage-regulator">Voltage Regulator</h2>
 <table>
 <thead>
 <tr>
+<th>Image</th>
+<th>Solution (with price)</th>
 <th>Pros</th>
 <th>Cons</th>
+<th>Link to Product</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
-</tr>
-<tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
-</tr>
-<tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
 <td></td>
+<td><strong>TPS63030DSKR — $2.14/unit</strong></td>
+<td>- Recommended for 2–3 AA battery-powered designs <br> - Well-documented buck-boost solution</td>
+<td>- More layout parts than some alternatives <br> - Layout could become bulky</td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS63030DSKR/1972182">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ISL9120IRTAZ-T7A — $2.44/unit</strong></td>
+<td>- Very compact <br> - Fewer layout parts needed</td>
+<td>- Smaller size makes soldering more difficult</td>
+<td><a href="https://www.digikey.com/en/products/detail/renesas-electronics-corporation/ISL9120IRTAZ-T7A/6097375">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>RT5707 / RT5707A — $1.15/unit</strong></td>
+<td>- Efficient buck converter <br> - Low quiescent current (preserves battery life in sleep)</td>
+<td>- No buck-boost (fails if VIN &lt; VOUT) <br> - Voltage range limited vs others</td>
+<td><a href="https://www.richtek.com/Products/Switching%20Regulators/DC_DC%20StepDown%20Convertor/RT5707RT5707A">Link to product</a></td>
 </tr>
 </tbody>
 </table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 1 — TPS63030DSKR<br>
+<strong>Rationale:</strong> Well-suited for a three-AA-battery design. It meets the system’s power requirements and offers strong efficiency at a reasonable price, despite requiring a slightly larger layout.</p>
+<hr>
+<h2 id="oled-screen">OLED Screen</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Solution (with price)</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Link to Product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong>DIY0141 0.96 Inch OLED Display Blue/Yellow — $9.99 (2 units)</strong></td>
+<td>- I²C connectivity (compatible with PIC) <br> - Fastest delivery (2 days) <br> - Good deal (comes with 2 units) <br> - 3.3–5 V Voltage <br> - 2 colors</td>
+<td>- Slightly bulky compared to other OLEDs</td>
+<td><a href="https://www.amazon.com/Wishiot-Display-Self-Luminous-Compatible-Raspberry/dp/B0D1CCHRHW/ref=sr_1_1_sspa?crid=2NXUX32J4XGK1&amp;dib=eyJ2IjoiMSJ9.02CYgV0cwBlIFXJ_E-oMvKJhf2IDVKqSJf6wUIl6pc1o1ktfPX7DvnlfsZjNUn2SM3TIGEcGFmhTq4kUNLDraTgYCGEBEynDMBXt6dM5piYM8smDrvY5aYvt-exm-0m-qqPOjXBFr_jjbXrJScshKV4DRSBKZoRRCueRJhVRY4Z03Elp_l5JhSnIbpnXRVRxcU4VPJV5mB76Vlx_q7Fy-QsKbz1Z1QjNRGPvmDU2vY4.HsEscKoACkI8M1oaUV_CZpSse_JS1nN4t6LCA4yZDyw&amp;dib_tag=se&amp;keywords=0.96%2Binch%2BOLED%2B128%C3%9764%2BSSD1306%2Bmodule&amp;qid=1760750777&amp;sprefix=0.96%2Binch%2Boled%2B128%2B64%2Bssd1306%2Bmodule%2Caps%2C354&amp;sr=8-1-spons&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>U602602 — $6.99/unit</strong></td>
+<td>- I²C connectivity (compatible with PIC) <br> - 3.3–5 V Voltage</td>
+<td>- Longer delivery time <br> - Only one unit per order <br> - Most expensive per unit</td>
+<td><a href="https://www.amazon.com/UCTRONICS-SSD1306-Self-Luminous-Display-Raspberry/dp/B072Q2X2LL/ref=pd_ci_mcx_di_int_sccai_cn_d_sccl_1_4/132-4994263-9298217?pd_rd_w=kUFXT&amp;content-id=amzn1.sym.751acc83-5c05-42d0-a15e-303622651e1e&amp;pf_rd_p=751acc83-5c05-42d0-a15e-303622651e1e&amp;pf_rd_r=0GZ11NE4PX3CGZW1R9MR&amp;pd_rd_wg=DGBZr&amp;pd_rd_r=de354205-f6ca-4b5c-83d8-39aae13d9228&amp;pd_rd_i=B072Q2X2LL&amp;psc=1">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>YELUFT B0FKYVZ9W8 — $15.99 (5 OLEDs) / $8.99 (2 OLEDs)</strong></td>
+<td>- I²C connectivity (compatible with PIC) <br> - 2nd fastest delivery (5 days) <br> - Best deal per unit <br> - 3.3–5 V Voltage</td>
+<td>- Slightly longer delivery <br> - Only one color</td>
+<td><a href="https://www.amazon.com/dp/B0FKYVZ9W8/ref=sspa_dk_detail_0?pd_rd_i=B0FKYVZ9W8&amp;pd_rd_w=jsBYG&amp;content-id=amzn1.sym.30062d3d-2c31-47f3-af26-55177a669bb5&amp;pf_rd_p=30062d3d-2c31-47f3-af26-55177a669bb5&amp;pf_rd_r=V18EFV1PA1P7MM85NRM4&amp;pd_rd_wg=ILOoQ&amp;pd_rd_r=20971833-a070-408a-8b4f-1221b090edf5&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&amp;th=1">Link to product</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 3 — YELUFT B0FKYVZ9W8<br>
+<strong>Rationale:</strong> Provides the best value per unit and meets all compatibility needs. Its compact shape saves space, making it the most practical option for this design.</p>
+<hr>
+<h2 id="mosfet">MOSFET</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Solution (with price)</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Link to Product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong>NTR4101PT1G P-CH 20 V 1.8 A SOT23-3 — $0.36/unit</strong></td>
+<td>- Good balance between specs <br> - Easy to solder</td>
+<td>- Slightly wider than other MOSFETs</td>
+<td><a href="https://www.digikey.com/en/products/detail/onsemi/NTR4101PT1G/687096">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>BSS84 P-CH 50 V 130 mA SOT23-3 — $0.0798/unit</strong></td>
+<td>- Cheapest option <br> - Can handle up to 50 V (overkill but functional)</td>
+<td>- Overspecified for the intended application</td>
+<td><a href="https://www.digikey.com/en/products/detail/onsemi/BSS84/244213">Link to product</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>DMP3068L-7 P-CH 30 V 3.3 A SOT23 — $0.36/unit</strong></td>
+<td>- High current switch (~700 mW, overkill)</td>
+<td>- Bulkier compared to other MOSFETs</td>
+<td><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/DMP3068L-7/5223214">Link to product</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 1 — NTR4101PT1G P-CH 20 V 1.8 A SOT23-3<br>
+<strong>Rationale:</strong> Offers the most balanced performance without excessive current or voltage capacity. Ideal for controlling the OLED’s power consumption efficiently.</p>
 
 
 
