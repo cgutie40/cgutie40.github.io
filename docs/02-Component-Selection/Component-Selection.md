@@ -5,9 +5,9 @@ title: Component Selection
 
 | Image | Solution (with price) | Pros | Cons | Link to Product |
 |-------|-----------------------|------|------|-----------------|
-|<img src="option1sensor" alt="SHT31 humidity/temperature sensor" width="120" />  | **SHT31-DIS-F2.5KS — $5.39/unit** | - 2.15–5.5 V voltage range (perfect) <br> - Measures both humidity and temperature <br> - In stock and good delivery time <br> - High accuracy / good stability | - More expensive <br> - Needy with maintenance | [Link to product](https://www.digikey.com/en/products/detail/sensirion-ag/SHT31-DIS-F2-5KS/6212134) |
-|  <img src="option2sensor" alt="BMP384 sensor" width="120" /> | **BMP384 — $3.35/unit** | - Low power consumption <br> - Compact package | - Primarily designed for drones <br> - Some features not a primary focus for the product in development | [Link to product](https://www.digikey.com/en/products/detail/bosch-sensortec/BMP388/8322638) |
-| <img src="option3sensor" alt="MPR121QR2 sensor" width="120" />  | **MPR121QR2 — $0.59/unit** | - Multiple channels (supports up to 12 electrodes) <br> - Sleep/standby modes | - Comes in bulk orders only <br> - Limited availability | [Link to product](https://www.digikey.com/en/products/detail/nxp-usa-inc/MPR121QR2/2186527) |
+|![SHT31 sensor](option1sensor)  | **SHT31-DIS-F2.5KS — $5.39/unit** | - 2.15–5.5 V voltage range (perfect) <br> - Measures both humidity and temperature <br> - In stock and good delivery time <br> - High accuracy / good stability | - More expensive <br> - Needy with maintenance | [Link to product](https://www.digikey.com/en/products/detail/sensirion-ag/SHT31-DIS-F2-5KS/6212134) |
+|  [BMP384 sensor](option2sensor)  | **BMP384 — $3.35/unit** | - Low power consumption <br> - Compact package | - Primarily designed for drones <br> - Some features not a primary focus for the product in development | [Link to product](https://www.digikey.com/en/products/detail/bosch-sensortec/BMP388/8322638) |
+| [MPR121QR2 sensor](option3sensor) | **MPR121QR2 — $0.59/unit** | - Multiple channels (supports up to 12 electrodes) <br> - Sleep/standby modes | - Comes in bulk orders only <br> - Limited availability | [Link to product](https://www.digikey.com/en/products/detail/nxp-usa-inc/MPR121QR2/2186527) |
 
 **Choice:** Option 1 — SHT31-DIS-F2.5KS  
 **Rationale:** This sensor best matches the project requirements. Despite its higher cost, it offers high accuracy, excellent stability, and dual humidity/temperature readings that provide valuable user data.
