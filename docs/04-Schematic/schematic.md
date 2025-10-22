@@ -7,7 +7,7 @@ title: Schematic
 This schematic is design to support .... (highlight functionally, power, and controller).
 
 
-![schematic](CGE_subsystem.png){style width:"350" height:"300;"}
+![schematic](CGE_Subsystem.png){style width:"350" height:"300;"}
 
 ## Resouces
 
