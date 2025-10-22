@@ -12,7 +12,6 @@ Subsystems are interconnected through a 2×4 ribbon cable that coordinates signa
 
 When a loss of pressure, presence of water, or high humidity is detected, the system triggers the speaker for an audible warning and displays a corresponding notification message on the OLED. A momentary debug push button is included for manual resets via the MCLR line.
 
-
 ![schematic](CGE_Subsystem.png){style width:"350" height:"300;"}
 
 ## Resouces
