@@ -508,66 +508,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview of Block Diagram">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#power" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sensors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actuators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Actuators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#display" class="md-nav__link">
-    <span class="md-ellipsis">
-      Display
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#team-connections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Team Connections
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -857,66 +797,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview of Block Diagram">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#power" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sensors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actuators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Actuators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#display" class="md-nav__link">
-    <span class="md-ellipsis">
-      Display
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#team-connections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Team Connections
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -945,35 +825,27 @@
   <h1>Individal Block Diagram</h1>
 
 <h2 id="overview-of-block-diagram">Overview of Block Diagram</h2>
-<p>This block diagram shows how the water leak detection system is put together, including power, sensors, actuators, and team connections. It helps explain how everything communicates with the PIC18F57Q43 and how power flows through the system.</p>
-<h3 id="purpose">Purpose</h3>
-<p>The diagram is meant to make it clear how each component works together, how sensors and actuators connect, and how team member modules interface with the system. It’s a quick reference for building, testing, and understanding the project.</p>
-<h3 id="power">Power</h3>
+<p>This block diagram represents the design of the Humidity and Temperature Subsystem, which is responsible for monitoring environmental conditions and detecting possible water leaks.</p>
+<p>A linear voltage regulator (LM7805T) supplies a regulated 5 V output to all components within the subsystem, including the SHT31-ARP-B humidity and temperature sensor, the red LED indicator, and the pushbutton debug circuit.</p>
+<p>The SHT31 sensor outputs two analog signals:</p>
+<p>Relative Humidity (RH) Signal — approximately 0.5 V to 4.5 V range</p>
+<p>Temperature (T) Signal — approximately 0.77 V to 4.34 V range</p>
+<p>Both analog outputs are fed into the Microchip PIC18F57Q43 Curiosity Nano through pins RA1 and RA0, respectively, where they are read by the MCU’s ADC1 module. These readings allow the microcontroller to monitor changes in humidity and temperature continuously.</p>
+<p>If the measured humidity surpasses a defined threshold (indicating a potential leak), the firmware triggers a digital output on pin RD5/RD7, routed through pin 3 of the team connector. This digital signal communicates with the main subsystem responsible for the alarm speaker, notifying it to activate the alert.</p>
+<p>Additionally:</p>
 <ul>
-<li><strong>Battery:</strong> 9 V  </li>
-<li><strong>Voltage Regulation:</strong> 3.3 V Buck switching regulator (<code>MP2307DN-LF-Z</code>) to supply the PIC, sensors, OLED, and LED  </li>
-<li><strong>Battery Monitoring:</strong> <code>VOLT-01</code> module tracks battery life  </li>
-<li><strong>Indicators:</strong> Red LED lights up if there’s a problem  </li>
+<li>
+<p>The Red LED (driven by PWM output RF4) provides a visual indicator for debugging or alarm testing.</p>
+</li>
+<li>
+<p>The pushbutton debug circuit allows manual input testing and verification of system response.</p>
+</li>
+<li>
+<p>The team connector includes both digital and analog channels for inter-subsystem communication.</p>
+</li>
 </ul>
-<h3 id="sensors">Sensors</h3>
-<ul>
-<li><strong>Analog:</strong> Water pressure sensor from a team member on pin 6  </li>
-<li><strong>Digital:</strong> Moisture sensor from a team member on pin 1  </li>
-</ul>
-<h3 id="actuators">Actuators</h3>
-<ul>
-<li><strong>Speaker:</strong> From a team member on pin 2  </li>
-<li><strong>Red LED:</strong> Local indicator for system status  </li>
-</ul>
-<h3 id="display">Display</h3>
-<ul>
-<li><strong>OLED Screen:</strong> <code>IPBOLD-96</code>, connected via I²C, shows battery life and system status  </li>
-</ul>
-<h3 id="team-connections">Team Connections</h3>
-<ul>
-<li>Signals from other team members include analog and digital inputs/outputs. The block diagram shows which microcontroller pins each connection uses so everything integrates smoothly.</li>
-</ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Cristopher_G_Team_208_INDV%20%281%29.png" data-desc-position="bottom"><img alt="Block Diagram" src="../Cristopher_G_Team_208_INDV%20%281%29.png"></a></p>
+<p>Overall, this subsystem acts as the environmental sensing front-end of the water leak detection system—providing real-time humidity and temperature data, threshold detection, and digital communication to the alarm subsystem.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BOM_CGE_INDV.png" data-desc-position="bottom"><img alt="Block Diagram" src="../BOM_CGE_INDV.png"></a></p>
 
 
 
