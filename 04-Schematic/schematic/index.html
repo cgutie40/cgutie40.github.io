@@ -843,13 +843,48 @@
   <h1>Schematic</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This schematic serves illustartion to my subsystem within a water leak detection system. It is powered from a 9 V input through a 5 V regulator, which exclusively supplies the microcontroller. A debug LED provides visual system feedback.</p>
-<p>A secondary 4.5 V (3×AA) battery pack feeds a 3.3 V regulator that powers the SHT3x humidity sensor and an SPI-OLED display. The SHT3x communicates with the PIC via I²C (SDA, SCL) and asserts an ALERT signal when humidity thresholds are exceeded.</p>
-<p>Subsystems are interconnected through a 2×4 ribbon cable that coordinates signals between team boards. The PIC outputs an alert signal on pin 6 to a teammate’s subsystem equipped with a speaker, and also receives inputs from a water spot detector and water pressure sensor.</p>
-<p>When a loss of pressure, presence of water, or high humidity is detected, the system triggers the speaker for an audible warning and displays a corresponding notification message on the OLED. A momentary debug push button is included for manual resets via the MCLR line.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../CGE_Subsystem.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../CGE_Subsystem.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
+<p><strong>Schematic Overview — Humidity &amp; Temperature Subsystem</strong></p>
+<p>The schematic depicts the complete electrical design of the Humidity &amp; Temperature Subsystem, showing how power, sensing, buffering, and digital communication are integrated.</p>
+<p>A linear voltage regulator (LM7805T) provides a stable 5 V supply to all components within the subsystem, including the SHT31-ARP-B sensor, MCP6004 operational amplifier, Microchip PIC18F57Q43 Curiosity Nano, red LED, and debug pushbutton circuit.</p>
+<p><em>Sensor &amp; Signal Buffering</em></p>
+<p>The SHT31-ARP-B sensor outputs two analog signals:</p>
+<ul>
+<li>
+<p>Relative Humidity (RH) signal</p>
+</li>
+<li>
+<p>Temperature (T) signal</p>
+</li>
+</ul>
+<p>Each signal is routed through one of the MCP6004’s op-amp channels, configured as unity-gain voltage followers (buffers).
+These buffers provide signal isolation and stability, ensuring the sensor outputs are not affected by the input impedance of the microcontroller’s ADC. No amplification or filtering is applied — the goal is to preserve the original sensor voltage while allowing accurate ADC readings.</p>
+<p><em>Microcontroller Interface</em></p>
+<p>Buffered signals are fed into the PIC18F57Q43 via its analog input pins:</p>
+<ul>
+<li>
+<p>RA0 (ADC1) → Temperature signal input</p>
+</li>
+<li>
+<p>RA1 (ADC1) → Humidity signal input</p>
+</li>
+</ul>
+<p>The microcontroller continuously monitors these readings.
+If the humidity exceeds a preset threshold (indicating a potential water leak), the firmware outputs a digital HIGH signal from RD5/RD7, routed to pin 3 of the team connector, which communicates with the alarm subsystem to activate the speaker.</p>
+<p><em>Indicators &amp; Debug Features</em></p>
+<ul>
+<li>
+<p>A red LED, driven by PWM pin RF4, serves as a visual alert or status indicator.</p>
+</li>
+<li>
+<p>A pushbutton debug circuit provides manual input testing for system verification.</p>
+</li>
+</ul>
+<p><em>Power Distribution</em></p>
+<p>All components operate from the regulated 5 V rail supplied by the LM7805T.
+Decoupling capacitors are included near key ICs to reduce noise and ensure stable analog readings.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../CGE_Updated_Schem.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../CGE_Updated_Schem.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
 <h2 id="resouces">Resouces</h2>
-<p>The schematic as a PDF download is available <a href="../CGE_Subsystem.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../CGE_Subsystem.zip"><em>here</em></a>.</p>
+<p>The schematic as a PDF download is available <a href="../CGE_Subsystem_updated.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../CGE_Subsystem.zip"><em>here</em></a>.</p>
 
 
 
