@@ -35,10 +35,10 @@ My subsystem uses the SHT31-ARP-B sensor to continuously measure humidity and te
 
 Within this datasheet, I document the following sections related to my work:
 
-*Component Selection: Comparison of potential sensor options, including pros and cons, reference links, part numbers, costs, and visual aids — culminating in my final component choice and rationale.
+-Component Selection: Comparison of potential sensor options, including pros and cons, reference links, part numbers, costs, and visual aids — culminating in my final component choice and rationale.
 
-*Schematic: A detailed circuit diagram illustrating the electrical connections of the humidity and temperature sensor with the system.
+-Schematic: A detailed circuit diagram illustrating the electrical connections of the humidity and temperature sensor with the system.
 
-*Power Budget: Analysis of supply voltage and current consumption, including power drawn by major components, voltage regulator efficiency, and overall power source considerations.
+-Power Budget: Analysis of supply voltage and current consumption, including power drawn by major components, voltage regulator efficiency, and overall power source considerations.
 
-*Bill of Materials (BOM): Currently in development, this section will provide a comprehensive list of all components used.
+-Bill of Materials (BOM): Currently in development, this section will provide a comprehensive list of all components used.
