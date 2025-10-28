@@ -4,16 +4,47 @@ title: Schematic
 
 ## Overview
 
-This schematic serves illustartion to my subsystem within a water leak detection system. It is powered from a 9 V input through a 5 V regulator, which exclusively supplies the microcontroller. A debug LED provides visual system feedback.
+**Schematic Overview — Humidity & Temperature Subsystem**
 
-A secondary 4.5 V (3×AA) battery pack feeds a 3.3 V regulator that powers the SHT3x humidity sensor and an SPI-OLED display. The SHT3x communicates with the PIC via I²C (SDA, SCL) and asserts an ALERT signal when humidity thresholds are exceeded.
+The schematic depicts the complete electrical design of the Humidity & Temperature Subsystem, showing how power, sensing, buffering, and digital communication are integrated.
 
-Subsystems are interconnected through a 2×4 ribbon cable that coordinates signals between team boards. The PIC outputs an alert signal on pin 6 to a teammate’s subsystem equipped with a speaker, and also receives inputs from a water spot detector and water pressure sensor.
+A linear voltage regulator (LM7805T) provides a stable 5 V supply to all components within the subsystem, including the SHT31-ARP-B sensor, MCP6004 operational amplifier, Microchip PIC18F57Q43 Curiosity Nano, red LED, and debug pushbutton circuit.
 
-When a loss of pressure, presence of water, or high humidity is detected, the system triggers the speaker for an audible warning and displays a corresponding notification message on the OLED. A momentary debug push button is included for manual resets via the MCLR line.
+*Sensor & Signal Buffering*
 
-![schematic](CGE_Subsystem.png){style width:"350" height:"300;"}
+The SHT31-ARP-B sensor outputs two analog signals:
+
+- Relative Humidity (RH) signal
+
+- Temperature (T) signal
+
+Each signal is routed through one of the MCP6004’s op-amp channels, configured as unity-gain voltage followers (buffers).
+These buffers provide signal isolation and stability, ensuring the sensor outputs are not affected by the input impedance of the microcontroller’s ADC. No amplification or filtering is applied — the goal is to preserve the original sensor voltage while allowing accurate ADC readings.
+
+*Microcontroller Interface*
+
+Buffered signals are fed into the PIC18F57Q43 via its analog input pins:
+
+- RA0 (ADC1) → Temperature signal input
+
+- RA1 (ADC1) → Humidity signal input
+
+The microcontroller continuously monitors these readings.
+If the humidity exceeds a preset threshold (indicating a potential water leak), the firmware outputs a digital HIGH signal from RD5/RD7, routed to pin 3 of the team connector, which communicates with the alarm subsystem to activate the speaker.
+
+*Indicators & Debug Features*
+
+- A red LED, driven by PWM pin RF4, serves as a visual alert or status indicator.
+
+- A pushbutton debug circuit provides manual input testing for system verification.
+
+*Power Distribution*
+
+All components operate from the regulated 5 V rail supplied by the LM7805T.
+Decoupling capacitors are included near key ICs to reduce noise and ensure stable analog readings.
+
+![schematic](CGE_Updated_Schem.png){style width:"350" height:"300;"}
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](CGE_Subsystem.pdf), and the Zip folder of the project [*here*](CGE_Subsystem.zip).
+The schematic as a PDF download is available [*here*](CGE_Subsystem_updated.pdf), and the Zip folder of the project [*here*](CGE_Subsystem.zip).
