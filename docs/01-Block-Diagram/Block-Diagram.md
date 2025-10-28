@@ -6,29 +6,28 @@ tags:
 ---
 ## Overview of Block Diagram
 
-This block diagram shows how the water leak detection system is put together, including power, sensors, actuators, and team connections. It helps explain how everything communicates with the PIC18F57Q43 and how power flows through the system.
+This block diagram represents the design of the Humidity and Temperature Subsystem, which is responsible for monitoring environmental conditions and detecting possible water leaks.
 
-### Purpose
-The diagram is meant to make it clear how each component works together, how sensors and actuators connect, and how team member modules interface with the system. It’s a quick reference for building, testing, and understanding the project.
+A linear voltage regulator (LM7805T) supplies a regulated 5 V output to all components within the subsystem, including the SHT31-ARP-B humidity and temperature sensor, the red LED indicator, and the pushbutton debug circuit.
 
-### Power
-- **Battery:** 9 V  
-- **Voltage Regulation:** 3.3 V Buck switching regulator (`MP2307DN-LF-Z`) to supply the PIC, sensors, OLED, and LED  
-- **Battery Monitoring:** `VOLT-01` module tracks battery life  
-- **Indicators:** Red LED lights up if there’s a problem  
+The SHT31 sensor outputs two analog signals:
 
-### Sensors
-- **Analog:** Water pressure sensor from a team member on pin 6  
-- **Digital:** Moisture sensor from a team member on pin 1  
+Relative Humidity (RH) Signal — approximately 0.5 V to 4.5 V range
 
-### Actuators
-- **Speaker:** From a team member on pin 2  
-- **Red LED:** Local indicator for system status  
+Temperature (T) Signal — approximately 0.77 V to 4.34 V range
 
-### Display
-- **OLED Screen:** `IPBOLD-96`, connected via I²C, shows battery life and system status  
+Both analog outputs are fed into the Microchip PIC18F57Q43 Curiosity Nano through pins RA1 and RA0, respectively, where they are read by the MCU’s ADC1 module. These readings allow the microcontroller to monitor changes in humidity and temperature continuously.
 
-### Team Connections
-- Signals from other team members include analog and digital inputs/outputs. The block diagram shows which microcontroller pins each connection uses so everything integrates smoothly.
+If the measured humidity surpasses a defined threshold (indicating a potential leak), the firmware triggers a digital output on pin RD5/RD7, routed through pin 3 of the team connector. This digital signal communicates with the main subsystem responsible for the alarm speaker, notifying it to activate the alert.
 
-![Block Diagram](Cristopher_G_Team_208_INDV%20(1).png)
+Additionally:
+
+- The Red LED (driven by PWM output RF4) provides a visual indicator for debugging or alarm testing.
+
+- The pushbutton debug circuit allows manual input testing and verification of system response.
+
+- The team connector includes both digital and analog channels for inter-subsystem communication.
+
+Overall, this subsystem acts as the environmental sensing front-end of the water leak detection system—providing real-time humidity and temperature data, threshold detection, and digital communication to the alarm subsystem.
+
+![Block Diagram](BOM_CGE_INDV.png)
