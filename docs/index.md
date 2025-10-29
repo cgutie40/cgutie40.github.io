@@ -7,7 +7,7 @@ tags:
 <center>
 <font size= "6">(Cristopher Gutierrez) Datasheet</font><br>
 as part of<br>
-<font size= "8"> JECK</font><br>
+<font size= "8">Water Detector System: Humidity & Temperature Sensor</font><br>
 for<br>
 <font size= "5"> Team 208 </font><br>
 
