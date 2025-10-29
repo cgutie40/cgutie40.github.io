@@ -19,7 +19,7 @@ The SHT31-ARP-B sensor outputs two analog signals:
 - Temperature (T) signal
 
 Each signal is routed through one of the MCP6004’s op-amp channels, configured as unity-gain voltage followers (buffers).
-These buffers provide signal isolation and stability, ensuring the sensor outputs are not affected by the input impedance of the microcontroller’s ADC. No amplification or filtering is applied — the goal is to preserve the original sensor voltage while allowing accurate ADC readings.
+These buffers provide signal isolation and stability, making sure the sensor outputs are not affected by the input impedance of the microcontroller’s ADC.
 
 *Microcontroller Interface*
 
