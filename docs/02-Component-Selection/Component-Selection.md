@@ -12,7 +12,7 @@ title: Component Selection
 
 **Choice:** `SHT31-ARP-B`  
 **Rationale:**  
-Despite being relatively costly, Sensirion sensors are known for their excellent reliability and comprehensive documentation, simplifying circuit development. The SHT31 is compact yet precise — ideal for the environmental conditions expected in our water-leak detection design. Its ability to operate two signal lines simultaneously enables flexibility in end-user applications. The primary purpose of this sensor is to detect humidity changes caused by potential water leaks.
+Despite being relatively costly, Sensirion sensors are known for their excellent reliability and comprehensive documentation, simplifying circuit development. The SHT31 is compact yet precise ; ideal for the environmental conditions expected in our water-leak detection design. Its ability to operate two signal lines simultaneously enables flexibility in end-user applications. The primary purpose of this sensor is to detect humidity changes caused by potential water leaks.
 
 ---
 
