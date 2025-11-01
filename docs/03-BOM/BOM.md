@@ -38,8 +38,8 @@ Note: Setting it up as a table is nice because it is completely viewable without
 
 * You could also import your BOM via a screenshot of the spreadsheet created BOM
 
-## Bill of Materials Example (as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure 2:** Example Bill of Materials as a screenshot.
+## Bill of Materials (as Image)
+![](bomcge.png){style width: "2000"}
 
-As you can see, the text can be difficult to read without opening the image.
+
+
