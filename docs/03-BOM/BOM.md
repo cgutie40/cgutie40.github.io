@@ -10,7 +10,6 @@ BOM for Humidity and Temperature subsytem
 
 ## Bill of Materials (as Table)
 
-
 | Part Name/Description | Qty | Unit Cost | Total Cost | Manufacturer | Manufacturer Part # | Vendor Link | Datasheet Link | Supplier | Supplier Part # | Schematic Reference Designators |
 |------------------------|-----|-----------|-------------|---------------|---------------------|--------------|----------------|-----------|------------------|----------------------------------|
 | .33uF ceramic capacitor | 4 | $0.07 | $0.28 | ALLECIN | N/A | [Link](https://www.amazon.com) | N/A | Amazon | B0DFQCTCGS | C1 |
