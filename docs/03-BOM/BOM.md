@@ -33,11 +33,6 @@ BOM for Humidity and Temperature subsytem
 | 01X03 female header | 4 | $0.30 | $1.20 | Sullins Connector Solutions | PPTC031LFBN-RC | [Link](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC031LFBN-RC/810143) | [PDF](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf) | DigiKey | S7001-ND |  |
 | 9V, 3A Plug-in Power Supply | 1 | $4.52 | $4.52 | BestCH | 0930 | [Link](https://www.amazon.com/gp/product/B09ZTKTLGW/) | N/A | Amazon | B09ZTKTLGW | *Not on Schematic - External Power* |
 
-
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
-
 ## Bill of Materials (as Image)
 ![](bomcge.png){style width: "2000"}
 
