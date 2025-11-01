@@ -41,4 +41,4 @@ Within this datasheet, I document the following sections related to my work:
 
 - Power Budget: Analysis of supply voltage and current consumption, including power drawn by major components, voltage regulator efficiency, and overall power source considerations.
 
-- Bill of Materials (BOM): Currently in development, this section will provide a comprehensive list of all components used.
+- Bill of Materials (BOM): This section will provide a comprehensive list of all components used.
