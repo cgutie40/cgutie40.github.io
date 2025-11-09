@@ -6,7 +6,7 @@ PCB
 
 ## LINKS
 
-The PCB as a PDF download is available [*here*](FCB_FandB.pdf), and the Zip folder of the project [*here*](CGE_Subsystem.zip).
+The PCB as a PDF download is available [*here*](PCB_FandB.pdf), and the Zip folder of the project [*here*](CGE_Subsystem.zip).
 
-Gerber Files [*here*](Cristopher208).
+Gerber Files [*here*](Cristopher208.zip).
 
