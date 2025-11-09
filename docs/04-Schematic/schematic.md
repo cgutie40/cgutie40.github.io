@@ -43,8 +43,8 @@ If the humidity exceeds a preset threshold (indicating a potential water leak), 
 All components operate from the regulated 5 V rail supplied by the LM7805T.
 Decoupling capacitors are included near key ICs to reduce noise and allow stable analog readings.
 
-![schematic](UpdatedCGEschem.png){style width:"350" height:"300;"}
+![schematic](My_Subsystem_revised_CGE.png){style width:"350" height:"300;"}
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](CGE_Subsystem%20(1).pdf), and the Zip folder of the project [*here*](Updated_CGE_Subsystem.zip).
+The schematic as a PDF download is available [*here*](CGE_Subsystem_Revised.pdf), and the Zip folder of the project [*here*](CGE_Subsystem.zip).
