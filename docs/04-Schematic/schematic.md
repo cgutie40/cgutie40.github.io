@@ -47,4 +47,4 @@ Decoupling capacitors are included near key ICs to reduce noise and allow stable
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](CGE_Subsystem%(1).pdf), and the Zip folder of the project [*here*](Updated_CGE_Subsystem.zip).
+The schematic as a PDF download is available [*here*](CGE_Subsystem%20(1).pdf), and the Zip folder of the project [*here*](Updated_CGE_Subsystem.zip).
