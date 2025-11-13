@@ -914,7 +914,7 @@
 <p><strong>Schematic Overview — Humidity &amp; Temperature Subsystem</strong></p>
 <p>The schematic depicts the complete electrical design of the Humidity &amp; Temperature Subsystem, showing how power, sensing, buffering, and digital communication are integrated.</p>
 <p>A linear voltage regulator (LM7805T) provides a stable 5 V supply to all components within the subsystem, including the SHT31-ARP-B sensor, MCP6004 operational amplifier, Microchip PIC18F57Q43 Curiosity Nano, red LED, and debug pushbutton circuit.</p>
-<p><em>Sensor &amp; Signal Buffering</em></p>
+<p><em>Sensor &amp; Signal Amplification</em></p>
 <p>The SHT31-ARP-B sensor outputs two analog signals:</p>
 <ul>
 <li>
@@ -924,16 +924,15 @@
 <p>Temperature (T) signal</p>
 </li>
 </ul>
-<p>Each signal is routed through one of the MCP6004’s op-amp channels, configured as unity-gain voltage followers (buffers).
-These buffers provide signal isolation and stability, making sure the sensor outputs are not affected by the input impedance of the microcontroller’s ADC.</p>
+<p>Each signal is routed through the MCP6004’s op-amp channels, configured as as two non-inverting amplifiers (Gain ≈ 1.2) to condition SHT31-ARP-B-Temperature &amp; Humidity signals around a 2.5V mid-supply reference for 0-5 V ADC use.Expected outputs: Temp ≈ 0.44-4.7 V, RH ≈ 0.1-4.9 V from inputs 0.77-4.34 V and 0.5-4.5 V respectively.</p>
 <p><em>Microcontroller Interface</em></p>
 <p>Buffered signals are fed into the PIC18F57Q43 via its analog input pins:</p>
 <ul>
 <li>
-<p>RA0 (ADC1) → Temperature signal input</p>
+<p>RA0 (ADC1) → Humidity signal input</p>
 </li>
 <li>
-<p>RA1 (ADC1) → Humidity signal input</p>
+<p>RA1 (ADC1) → Temperature signal input</p>
 </li>
 </ul>
 <p>The microcontroller continuously monitors these readings.
@@ -950,7 +949,7 @@ If the humidity exceeds a preset threshold (indicating a potential water leak), 
 <p><em>Power Distribution</em></p>
 <p>All components operate from the regulated 5 V rail supplied by the LM7805T.
 Decoupling capacitors are included near key ICs to reduce noise and allow stable analog readings.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../schematicfinal%20.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../schematicfinal%20.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Updated_Schem_F.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../Updated_Schem_F.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
 <h2 id="resouces">Resouces</h2>
 <p>The schematic as a PDF download is available <a href="../CGE_Subsystem.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../CGE_Subsystem.zip"><em>here</em></a>.</p>
 
