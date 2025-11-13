@@ -10,7 +10,7 @@ The schematic depicts the complete electrical design of the Humidity & Temperatu
 
 A linear voltage regulator (LM7805T) provides a stable 5 V supply to all components within the subsystem, including the SHT31-ARP-B sensor, MCP6004 operational amplifier, Microchip PIC18F57Q43 Curiosity Nano, red LED, and debug pushbutton circuit.
 
-*Sensor & Signal Buffering*
+*Sensor & Signal Amplification*
 
 The SHT31-ARP-B sensor outputs two analog signals:
 
@@ -18,16 +18,15 @@ The SHT31-ARP-B sensor outputs two analog signals:
 
 - Temperature (T) signal
 
-Each signal is routed through one of the MCP6004’s op-amp channels, configured as unity-gain voltage followers (buffers).
-These buffers provide signal isolation and stability, making sure the sensor outputs are not affected by the input impedance of the microcontroller’s ADC.
+Each signal is routed through the MCP6004’s op-amp channels, configured as as two non-inverting amplifiers (Gain ≈ 1.2) to condition SHT31-ARP-B-Temperature & Humidity signals around a 2.5V mid-supply reference for 0-5 V ADC use.Expected outputs: Temp ≈ 0.44-4.7 V, RH ≈ 0.1-4.9 V from inputs 0.77-4.34 V and 0.5-4.5 V respectively.
 
 *Microcontroller Interface*
 
 Buffered signals are fed into the PIC18F57Q43 via its analog input pins:
 
-- RA0 (ADC1) → Temperature signal input
+- RA0 (ADC1) → Humidity signal input
 
-- RA1 (ADC1) → Humidity signal input
+- RA1 (ADC1) → Temperature signal input
 
 The microcontroller continuously monitors these readings.
 If the humidity exceeds a preset threshold (indicating a potential water leak), the firmware outputs a digital HIGH signal from RD5/RD7, routed to pin 3 of the team connector, which communicates with the alarm subsystem to activate the speaker.
@@ -43,7 +42,7 @@ If the humidity exceeds a preset threshold (indicating a potential water leak), 
 All components operate from the regulated 5 V rail supplied by the LM7805T.
 Decoupling capacitors are included near key ICs to reduce noise and allow stable analog readings.
 
-![schematic](schematicfinal%20.png){style width:"350" height:"300;"}
+![schematic](Updated_Schem_F.png){style width:"350" height:"300;"}
 
 ## Resouces
 
