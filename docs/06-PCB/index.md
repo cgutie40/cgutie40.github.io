@@ -1,4 +1,9 @@
-PCB 
+---
+title: PCB
+tags:
+- tag1
+- tag2
+---
 
 *Front view:*
 
