@@ -1,4 +1,9 @@
-
+---
+title: Hardware V2.0
+tags:
+- tag1
+- tag2
+---
 ### PCB Revision Plan: Footprint, Testability, Gain and Protection
 
 I want to shrink the PCB footprint. The board is about **100 × 100 mm** now and still feels bulky despite some unused areas. Reorganizing components and tightening the layout should cut size and make the board easier to carry.
