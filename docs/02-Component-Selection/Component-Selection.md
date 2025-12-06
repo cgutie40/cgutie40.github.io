@@ -42,6 +42,13 @@ The LM7805T is a well-rounded and reliable choice. It offers solid protection fe
 **Rationale:**  
 The MCP6004 offers solid efficiency and availability, making it a practical choice. While not the most precise quad op-amp, it provides excellent performance for low-power signal conditioning near the sensors. Higher-end alternatives offer marginal benefits at significantly higher cost and power usage, making the MCP6004 the most balanced option.
 
+## Final Component Summary
+
+| Category                   | Selected Component | Price (ea) | Link |
+|---------------------------|--------------------|------------|------|
+| Humidity / Temperature Sensor | `SHT31-ARP-B`        | $4.32     | [Product](https://www.digikey.com/en/products/detail/sensirion-ag/SHT31-ARP-B/5872251) |
+| Voltage Regulator         | `LM7805T`           | $0.33 (100-qty) | [Product](https://www.digikey.com/en/products/detail/taejin/LM7805T/22237260) |
+| Operational Amplifier     | `MCP6004`           | $0.59      | [Product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) |
 
 
 
