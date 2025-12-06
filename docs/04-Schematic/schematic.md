@@ -42,7 +42,7 @@ If the humidity exceeds a preset threshold (indicating a potential water leak), 
 All components operate from the regulated 5 V rail supplied by the LM7805T.
 Decoupling capacitors are included near key ICs to reduce noise and allow stable analog readings.
 
-![schematic](Updated_Schem_F.png){style width:"350" height:"300;"}
+![schematic](SCHEMF.png){style width:"350" height:"300;"}
 
 ## Resouces
 
