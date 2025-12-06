@@ -30,4 +30,4 @@ Additionally:
 
 Overall, this subsystem acts as the environmental sensing front-end of the water leak detection system—providing real-time humidity and temperature data, threshold detection, and digital communication to the alarm subsystem.
 
-![Block Diagram](U_TBD_CGE.png)
+![Block Diagram](BOMUPD1.png)
