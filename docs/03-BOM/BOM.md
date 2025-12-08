@@ -17,13 +17,13 @@ BOM for Humidity and Temperature subsytem
 | 1nF capacitor (1000 pF) | 6 | $1.67 | $10.02 | Vishay Cera-Mite | 561R1DF0D10 | [Link](https://www.digikey.com/en/products/detail/vishay-cera-mite/561R1DF0D10/2825216) | [PDF](https://www.vishay.com/docs/23115/561r564r.pdf) | DigiKey | 561R1DF0D10-ND | C3, C4 |
 | 0.47uF capacitor | 6 | $0.30 | $1.80 | TDK Corporation | FG14X7R1E474KNT06 | [Link](https://www.digikey.com/en/products/detail/tdk-corporation/FG14X7R1E474KNT06/5800326) | [PDF](https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf) | DigiKey | FG14X7R1E474KNT06 | C8 |
 | RED LED | 6 | $0.07 | $0.42 | CHANZON | 100F5W-YT-RE-RE-SHAN | [Link](https://www.amazon.com) | N/A | Amazon | B0895T2ZY6 | D1 |
-| 3A Fuse | 3 | $1.29 | $3.87 | OptiFuse | TXG-3A | [Link](https://www.digikey.com/en/products/detail/optifuse/TXG-3A/12170853) | [PDF](https://www.optifuse.com/optifuse_ecommerce_tools/datasheets/TXG.pdf) | DigiKey | TXG-3A | F1 |
+| **1.5A Fuse** | 1 | $1.06 | $1.06 | Littelfuse Inc. | 025101.5MXL | [Link](https://www.digikey.com/en/products/detail/littelfuse-inc/025101-5MXL/700725) | [PDF](https://www.littelfuse.com/assetdocs/fuse-251-datasheet?assetguid=f47a0bb7-8ede-4679-9646-7114c3787688) | DigiKey | F2319-ND | F1 |
 | Barrel Jack Switch | 3 | $0.76 | $2.28 | Same Sky (Formerly CUI Devices) | PJ-102AH | [Link](https://www.digikey.com/en/products/detail/cui-devices/PJ-102AH/408448) | [PDF](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | DigiKey | CP-102AH-ND | J1 |
 | PIC18F57Q43 | 1 | $9.99 | $9.99 | Microchip | DM164150 | [Link](https://www.microchip.com/en-us/development-tool/DM164150) | [PDF](https://www.microchip.com/en-us/product/PIC18F57Q43) | Microchip | DM164150 | N1 |
 | MCP6004 | 2 | $0.59 | $1.18 | Microchip | MCP6004-I/P | [Link](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [PDF](https://embedded-systems-design.bitbucket.io/304/labs/emitter-detector/) | DigiKey | MCP6004-I/P-ND | O1 |
-| 100 Ω Resistor | 8 | $0.10 | $0.80 | YAGEO | CFR-25JB-52-100R | [Link](https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-100R/246) | [PDF](https://www.yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-CFR_DATASHEET.pdf) | DigiKey | CFR-25JB-52-100R | R1, R2 |
-| 330 Ω Resistor | 4 | $0.03 | $0.11 | Lumimax Optoelectronic Technology | MF1/4W330RFT | [Link](https://www.digikey.com/en/products/detail/lumimax-optoelectronic-technology/MF1-4W330RFT/16708267) | [PDF](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2592/MF%20Series.pdf) | DigiKey | MF1/4W330RFT | R5 |
-| 10KΩ Resistor | 4 | $0.10 | $0.40 | YAGEO | CFR-25JB-52-10K | [Link](https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338) | [PDF](https://www.yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-CFR_DATASHEET.pdf) | DigiKey | CFR-25JB-52-10K | R6 |
+| **330 Ω Resistor** | 1 | $0.03 | $0.03 | Lumimax Optoelectronic Technology | MF1/4W330RFT | [Link](https://www.digikey.com/en/products/detail/lumimax-optoelectronic-technology/MF1-4W330RFT/16708267) | [PDF](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2592/MF%20Series.pdf) | DigiKey | MF1/4W330RFT | R5 |
+| **2 kΩ Resistor** | 2 | N/A | N/A | N/A | N/A | N/A | N/A | PRLTA HALL | Resistor Cabinet | R1, R3 |
+| **10 kΩ Resistor** | 10 | $0.10 | $1.00 | YAGEO | CFR-25JB-52-10K | [Link](https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338) | [PDF](https://www.yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-CFR_DATASHEET.pdf) | DigiKey | CFR-25JB-52-10K | R2, R4, R6–R10 |
 | SHT31-ARP-B | 4 | $4.32 | $17.28 | Sensirion AG | SHT31-ARP-B | [Link](https://www.digikey.com) | [PDF](https://sensirion.com/media/documents/EA647515/63A5A524/Datasheet_SHT3x_ARP.pdf) | DigiKey | 1649-1012-1-ND | SHT1 |
 | SW_DPST_CGE | 4 | $0.13 | $0.52 | TE Connectivity ALCOSWITCH Switches | 450-1650-ND | [Link](https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825910-6/1632536) | [PDF](https://www.te.com/usa-en/product-1825910-6.html) | DigiKey | 450-1650-ND | SW1 |
 | Test Points | 40 | $0.39 | $15.60 | Keystone Electronics | 5000 | [Link](https://www.digikey.com/en/products/detail/keystone-electronics/5000/255326) | [PDF](https://www.keyelco.com/userAssets/file/M65p56.pdf) | DigiKey | 36-5000-ND | TP1–TP19 |
@@ -33,7 +33,4 @@ BOM for Humidity and Temperature subsytem
 | 9V, 3A Plug-in Power Supply | 1 | $4.52 | $4.52 | BestCH | 0930 | [Link](https://www.amazon.com/gp/product/B09ZTKTLGW/) | N/A | Amazon | B09ZTKTLGW | *Not on Schematic - External Power* |
 
 ## Bill of Materials (as Image)
-![](bomcge.png){style width: "2000"}
-
-
-
+![](bomcgef.png){style width: "2000"}
