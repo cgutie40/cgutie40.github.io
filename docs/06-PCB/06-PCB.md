@@ -6,34 +6,21 @@ tags:
 ---
 
 *PCB before assembly*
-<div style="text-align:center;">
-  
-![RawPCB](IMG_1499.jpg){style="width:350px; height:300px;"}
 
-</div>
+![RawPCB](IMG_1499.jpg){ width=350px height=300px }
 
 *PCB, after soldering and testing*
-<div style="text-align:center;">
 
-![RawPCB](IMG_1552.jpg){style="width:350px; height:300px;"}
-
-![RawPCB](IMG_1550.jpg){style="width:350px; height:300px;"}
-
-</div>
+![RawPCB](IMG_1552.jpg){ width=350px height=300px }
+![RawPCB](IMG_1550.jpg){ width=350px height=300px }
 
 *Front view:*
-<div style="text-align:center;">
 
-![PCB Design of T&H Subsystem Front View](FrontPCB.png){style="width:350px; height:300px;"}
-
-</div>
+![PCB Design of T&H Subsystem Front View](FrontPCB.png){ width=350px height=300px }
 
 *Back view:*
-<div style="text-align:center;">
 
-![PCB Design of T&H Subsystem Back View](BackPCB.png){style="width:350px; height:300px;"}
-
-</div>
+![PCB Design of T&H Subsystem Back View](BackPCB.png){ width=350px height=300px }
 
 ## LINKS
 
